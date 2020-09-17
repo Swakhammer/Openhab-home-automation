@@ -1,0 +1,13 @@
+//This is item file
+//Włączniki świateł
+Switch kitchen	   "Kuchnia"             { gpio="pin:21" }
+Switch bedroom     "Sypialnia"           { gpio="pin:26" }
+Switch bathroom    "Łazienka"            { gpio="pin:19" }
+//Ściemniacz
+Dimmer livingroom  "Salon"               { gpio="pin:12" }
+//Przyciski specjalne
+Switch allswitch   "Wyłącznik świateł" 
+Switch holiday     "Tryb poza domem"  
+//Data i godzina
+DateTime date  "Data:     [%1$tA, %1$td.%1$tm.%1$tY]"  { channel="ntp:ntp:demo:dateTime" }
+DateTime time  "Godzina:  [%1$tH:%1$tM]"    	       { channel="ntp:ntp:demo:dateTime" }

@@ -1,0 +1,25 @@
+//This is sitemap file
+//Części składowe panelu sterowania
+
+sitemap home label="Raspberry Pi home automation" {
+	Frame label="Aplikacja do sterowania oświetleniem w domu"
+	Frame label="Pomieszczenia:" {
+
+		Switch item=kitchen     icon="light"  //ikona żarówki
+		Switch item=bathroom    icon="light"
+		Switch item=bedroom     icon="light"
+		Slider item=livingroom  icon="light"
+
+	}
+	Frame label="Przyciski specjalne"
+	{
+		Switch item=allswitch
+		Switch item=holiday
+	}
+	Frame label="Data i godzina:" {
+
+		Text item=date      icon="calendar"  
+		Text item=time		icon="time"
+
+	}
+}
